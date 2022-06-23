@@ -1,0 +1,286 @@
+/*
+    My first css project. Code might be a spaghetti, I'll optimize it soon.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Open-Sans, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    padding: 16px 72px;
+    background: rgb(225, 249, 255);
+    background: linear-gradient(180deg, rgba(225, 249, 255, 1) 30%, rgba(209, 255, 253, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.header .name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.right-links {
+    display: flex;
+    gap: 32px;
+}
+
+.right-links .links {
+    color: darkslategray;
+}
+
+.header a:hover {
+    color: rgb(0, 202, 202);
+}
+
+/* ABOUT */
+.aboutBg {
+    background-image: url(./images/ust.jpg);
+    background-color: lightgray;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.about {
+    background-color: #dfe5efe5;
+    padding: 25px 50px;
+    display: flex;
+    width: 48em;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.about .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about .name,
+.about .greeting {
+    font-size: 42px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.about .name {
+    color: teal;
+}
+
+.about .dp {
+    border-right: 5px solid teal;
+    border-bottom: 5px solid teal;
+    transition: 0.5s;
+}
+
+.about .dp:hover {
+    transform: scale(1.10);
+    border-radius: 8px;
+}
+
+.about .desc {
+    display: flex;
+    width: 400px;
+    font-size: 28px;
+    text-align: justify;
+    color: rgb(104, 104, 104);
+}
+
+.about .icons {
+    display: flex;
+    padding: 16px 0px;
+    gap: 24px;
+}
+
+.about .icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.about .icons img:hover {
+    opacity: 0.7;
+}
+
+/* PROJECTS */
+
+.projects {
+    background: rgb(225, 249, 255);
+    background: radial-gradient(circle, rgba(225, 249, 255, 1) 30%, rgba(209, 255, 253, 1) 100%);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1em;
+}
+
+.projects .title {
+    font-size: 42px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.projects .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.projects .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px;
+    padding: 10px;
+    font-size: 1.2em;
+    gap: 12px;
+}
+
+.projects img {
+    width: 400px;
+    transition: 0.5s;
+}
+
+.projects img:hover {
+    transform: scale(0.8);
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+/* QUOTE */
+.quote {
+    background-color: #1F2937;
+    padding: 64px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quote .text,
+.quote .author {
+    color: lightblue;
+}
+
+.quote .text {
+    font-size: 35px;
+}
+
+.quote .author {
+    font-size: 32px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* CONTACT */
+.contactBg {
+    background-image: url(./images/greece.jpg);
+    background-color: lightgray;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.contact {
+    background-color: #006d77;
+    padding: 36px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 900px;
+    height: 100px;
+    border-radius: 8px;
+
+}
+
+.contact .title {
+    font-size: 42px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: azure
+}
+
+.contact .text {
+    color: azure;
+    font-size: 24px;
+}
+
+.contactMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactMe a {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    background-color: #006d77;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    text-align: center;
+    padding: 6px 12px;
+    color: aliceblue
+}
+
+.contact a:hover {
+    background-color: aliceblue;
+    color: #006d77;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: azure;
+    height: 24px;
+    padding: 16px;
+    gap: 16px;
+    font-size: 18px;
+}
+
+.footer img {
+    transition: width 0.5s, height 0.5s, 0.5s;
+}
+
+.footer img:hover {
+    width: 32px;
+    height: 32px;
+    transform: rotate(360deg);
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
